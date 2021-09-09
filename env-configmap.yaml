@@ -1,0 +1,12 @@
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: env-configmap 
+data:
+  postgres_host: udagramkahinadev.curzpkwqir3w.us-east-1.rds.amazonaws.com
+  postgres_db: udagramkahinadev
+  aws_bucket: udagram-kahina-dev
+  aws_region: us-east-1
+  aws_profile: default
+  jwt_secret: hello
+  URL: http://localhost:8080

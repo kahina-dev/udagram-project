@@ -26,7 +26,7 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push kahinadev/reverseproxy
-  - docker push kahinadev/udagram-api-feed
-  - docker push kahinadev/udagram-api-user
-  - docker push kahinadev/udagram-frontend
+  - docker push kahinadev/reverseproxy:v1
+  - docker push kahinadev/udagram-api-feed:v1
+  - docker push kahinadev/udagram-api-user:v1
+  - docker push kahinadev/udagram-frontend:v1
